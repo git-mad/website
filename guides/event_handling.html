@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	  <link rel="stylesheet" href="../css/style.css">
+	  
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <!-- Material Design for Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/FezVrasta/bootstrap-material-design/dist/dist/bootstrap-material-design.min.css">
+      
+      <!-- Bootstrap Social -->
+      <link rel="stylesheet" href="../css/bootstrap-social.css">
+      
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="../css/font-awesome.min.css">
+	  
+	  
+      
+    <title>
+        Event Handling
+    </title>
+  </head>
+  <body>
+	  
+  <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay">
+  <header class="bmd-layout-header">
+    <div class="navbar navbar-light bg-primary">
+      <button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#dw-s1">
+        <span class="sr-only">Toggle drawer</span>
+        <i class="material-icons">menu</i>
+          <img src="../logo.png" height="50px">
+      </button>
+      <ul class="nav nav-tabs bg-primary">
+        <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="../guides.html">Guides</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../about_us.html">About Us</a>
+        </li>
+      </ul>
+        <div class="col-md-1 offset-md-7">
+			<div class="link-icons pull-right">
+				<a class="btn btn-social-icon btn-github" href="https://github.com/git-mad">
+					<span class="fa fa-github"></span>
+				</a>
+				<a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/gitmad/">
+					<span class="fa fa-facebook"></span>
+				</a>
+			</div>
+		</div>
+    </div>
+  </header>
+  <div id="dw-s1" class="bmd-layout-drawer bg-faded">
+    <header>
+      <a class="navbar-brand">GIT MAD</a>
+    </header>
+	  
+
+    <ul class="list-group">
+      <a class="list-group-item" href="../index.html"><i class="material-icons">home</i>Home</a>
+		<a class="list-group-item" href="../guides.html"><i class="material-icons">library_books</i>Guides</a>
+			<a class="list-group-item nested" href="basics.html"><i class="material-icons">description</i>Android Basics</a>
+			<a class="list-group-item nested" href="layouts.html"><i class="material-icons">description</i>Layouts and XML</a>
+			<a class="list-group-item nested active" href="event_handling.html"><i class="material-icons">description</i>Event Handling</a>
+            <a class="list-group-item nested" href="lists_and_navigation.html"><i class="material-icons">description</i>Lists &amp; Navigation</a>
+            <a class="list-group-item nested" href="fragments.html"><i class="material-icons">description</i>Fragments</a>
+			<a class="list-group-item nested" href="material_design.html"><i class="material-icons">description</i>Material Design</a>
+            <a class="list-group-item nested" href="git.html"><i class="material-icons">description</i>Git</a>
+            <a class="list-group-item nested" href="services.html"><i class="material-icons">description</i>Services</a>
+            <a class="list-group-item nested" href="async_task.html"><i class="material-icons">description</i>Async Task</a>
+      <a class="list-group-item" href="../about_us.html"><i class="material-icons">people</i>About Us</a>
+    </ul>
+
+  </div>
+  <main class="bmd-layout-content">
+    <div class="container-fluid">
+      <br>
+			<div class="card">
+				<div class="card-block">
+					<h2 class="card-title">Presentation</h2>
+					<p class="card-text">
+						<iframe src="https://docs.google.com/presentation/d/1olSIHnzCJp9fbpJbuTe4PJO0gF79kB84Qh0vBNSAZI0/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+						<br>
+						<a href="presentations/HandlingEvents.pptx"><i class="material-icons">file_download</i>Download the presentation.</a>
+					</p>
+				</div>
+				
+			</div>
+		
+		<div class="card">
+			<div class="card-block">
+				<h2 class="card-title">Guide</h2>
+				<p class="card-text">
+					<iframe src="https://docs.google.com/document/d/1BX6xWh32YoLMIImNh9RXAU-nigo0D8yEh1KkXaRPfv8/pub?embedded=true" frameborder="0" width=100% height="500"></iframe>
+
+					<br>
+					<a href="text/HandlingEvents.pdf"><i class="material-icons">file_download</i>Download the guide.</a>
+				</p>
+			</div>
+		</div>
+			
+    </div>
+	  
+	  
+  </main>
+</div>
+	  
+	  
+      
+
+    <!-- jQuery first, optional tether for tooltips, then Material Design for Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://cdn.rawgit.com/HubSpot/tether/v1.3.2/dist/js/tether.min.js"></script>
+    <script src="https://cdn.rawgit.com/fezvrasta/bootstrap-material-design/dist/dist/bootstrap-material-design.iife.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src=""></script>
+    <script>
+      $('body').bootstrapMaterialDesign()
+    </script>
+<!--	<script src="js/script.js"></script>-->
+  </body>
+</html>
